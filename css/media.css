@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+/*웹*/
+.panel,.sliderText,.mMainCon3{display: none;}
+
+/*반응형 모바일*/
+@media screen and (max-width:768px){
+    
+    /*모바일에선 안보임 처리*/
+    .gnb,.utill{display: none;}
+    /*모바일에서 보임 처리*/
+    .sliderText,.panel a{display: block;}
+    
+    /*inner값 초기화 width:100%로 해도됨*/
+    .inner{width: auto;}
+    
+    #header{
+        padding: 0;
+        height: auto;
+        margin: 10px 20px;
+        line-height: normal;
+    }
+    #header h1{
+        width: 70px;
+        height: 28px;
+        background: url(../images/sp_com_m.png) no-repeat;
+    }
+    .panel{
+        width: 16px;
+        height: 16px;
+        background: url(../images/sp_com_m.png) no-repeat -227px -98px;
+        text-indent: -9999px;
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        top:50%;
+        margin-top: -8px;
+        display: block;
+    }
+    
+    /*메인슬라이더*/
+    .mainSlider img{
+        position: absolute;
+        left: 50%;
+        margin-left: -460px;
+    }
+    .sliderText{
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        width: 100%;
+        color: #fff;
+        top: 50%;
+        margin-top: -37px;
+    }
+    .sliderText p{
+        font-size: 11px;
+        margin-top: 15px;
+    }
+    
+    .prevBtn,.nextBtn{
+        width: 13px;
+        height: 23px;
+        margin-top: -11px;
+        background: url(../images/sp_com_m.png) no-repeat;
+    }
+    .prevBtn{background-position: -64px -30px;}
+    .nextBtn{background-position: -80px -30px;}
+    
+    /*퀵메뉴*/
+    .quickMenu a{
+        width: 30%;
+        margin: 0;
+        font-size: 13px;
+        padding: 5px 0;
+    }
+    .quickMenu a span{
+        width: 33px;
+        margin: 0 auto;
+        height: 33px;
+        background: url(../images/sp_com_m.png) no-repeat;
+    }
+    .quickMenu .quickIcon1 span,.quickMenu .quickIcon1:hover span{background-position:0 -56px;}
+    .quickMenu .quickIcon2 span,.quickMenu .quickIcon2:hover span{background-position:-37px -56px;}
+    .quickMenu .quickIcon3 span,.quickMenu .quickIcon3:hover span{background-position:-74px -54px;}
+    .quickMenu .quickIcon4 span,.quickMenu .quickIcon4:hover span{background-position:-111px -56px; }
+    .quickMenu .quickIcon5 span,.quickMenu .quickIcon5:hover span{background-position:-146px -56px; }
+    .quickMenu .quickIcon6 span,.quickMenu .quickIcon6:hover span{background-position:-181px -56px; }
+    .quickMenu a:hover{color: #333;}
+    
+    
+    /*mainCon1*/
+    .mainCon1{display: none;}
+    
+    /*mainCon2*/
+    .mainCon2{padding: 0 10px;}
+    .con2Box{
+        width: calc(50% - 5px);
+        height: auto;
+        font-size: 13px;
+        margin: 5px 0;
+        margin-right: 10px;
+        background-size: cover;
+    }
+    .con2Box:nth-child(2n){margin-right: 0;}
+    .con2Box h3{
+        padding: 45% 0;
+    }
+    .con2Box:hover p{display: none;}
+    .con2_4{padding: 0;}
+    .con2_4 form{display: none;}
+    
+    /*mainCon3*/
+    .mainCon3{display: none;}
+    .mMainCon3{
+        display: block;
+        padding: 0 10px;
+    }
+    
+    .mMainCon3 dt, .mMainCon3 dd{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .mMainCon3 dl{
+        font-size: 13px;
+        font-weight: 700;
+        background: #f0eeeb;
+        line-height: 40px;
+        margin-top: 10px;
+    }
+    .mMainCon3 dt{
+        width: 15%;
+        text-align: center;
+        color: #2d5b79;
+    }
+    .mMainCon3 dd{
+        width: 80%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    /*mainCon4*/
+    .mainCon4{
+        padding: 20px 10px 10px 10px;
+        margin-top: 15px;
+        background-size: cover;
+    }
+    .con4Box{
+        width: calc(50% - 5px);
+        height: auto;
+        margin-right: 10px;
+        font-size: 0;
+        background-size: 100% 100%;
+        margin-bottom: 10px;
+    }
+    .con4Box:nth-child(2n){
+        margin-right: 0;
+    }
+    .con4Box a h3{
+        font-size: 15px;
+        padding-top: 90%;
+        padding-bottom: 10%;
+    }
+    /*footer*/
+    #footer{text-align: center;}
+    #footer li{
+        float: none;
+        display: inline-block;
+    }
+    #footer li:nth-child(3):after{
+        display: none;
+    }
+    .footerTop{
+        padding: 10px ;
+    }
+    .footerTopL{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .footerTopR{
+        margin-top: 20px;
+        position: static;
+    }
+    .csCenter span,.csCenter .number{
+        font-size: 13px;
+    }
+    .footerTopR select{
+        font-size: 13px;
+        width: 150px;
+    }
+    .footerInfo span,.footerLogo{
+        display: none;
+    }
+    .footerBottom{
+        padding: 20px 0;
+    }
+}
